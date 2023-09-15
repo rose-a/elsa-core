@@ -17,7 +17,6 @@ public class ForEachWorkflow: WorkflowBase
         builder.WithVariable(currentValueVariable);
         builder.Root = new Sequence
         {
-            Variables = { currentValueVariable },
             Activities =
             {
                 new WriteLine("Going through the shopping list..."),
